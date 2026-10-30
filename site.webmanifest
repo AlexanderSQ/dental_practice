@@ -1,0 +1,9 @@
+{
+  "name": "Clínica Dental Sonrisa",
+  "short_name": "Dental Sonrisa",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f6fbfa",
+  "theme_color": "#0b6b71",
+  "icons": []
+}
