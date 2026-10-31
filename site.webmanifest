@@ -1,9 +1,9 @@
 {
-  "name": "Clínica Dental Sonrisa",
-  "short_name": "Dental Sonrisa",
+  "name": "Sonríe Salud",
+  "short_name": "Sonríe Salud",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#f6fbfa",
-  "theme_color": "#0b6b71",
+  "background_color": "#ffffff",
+  "theme_color": "#231f44",
   "icons": []
 }
