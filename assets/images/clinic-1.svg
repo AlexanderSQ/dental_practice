@@ -1,13 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 470">
-  <defs><linearGradient id="b" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#cfe9e5"/><stop offset="1" stop-color="#e9d6b9"/></linearGradient></defs>
+  <defs><linearGradient id="b" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ccecfc"/><stop offset="1" stop-color="#a4ccfb"/></linearGradient></defs>
   <rect width="900" height="470" fill="url(#b)"/>
   <rect x="120" y="95" width="660" height="305" rx="12" fill="#fff"/>
-  <rect x="120" y="95" width="660" height="65" rx="12" fill="#0b6b71"/>
-  <path d="M120 148h660" stroke="#0b6b71" stroke-width="20"/>
-  <rect x="180" y="210" width="180" height="190" fill="#d8efec"/>
-  <rect x="540" y="210" width="180" height="190" fill="#d8efec"/>
-  <rect x="403" y="218" width="94" height="182" rx="7" fill="#14383c"/>
-  <circle cx="480" cy="308" r="5" fill="#d5ab70"/>
+  <rect x="120" y="95" width="660" height="65" rx="12" fill="#231f44"/>
+  <path d="M120 148h660" stroke="#231f44" stroke-width="20"/>
+  <rect x="180" y="210" width="180" height="190" fill="#ccecfc"/>
+  <rect x="540" y="210" width="180" height="190" fill="#ccecfc"/>
+  <rect x="403" y="218" width="94" height="182" rx="7" fill="#231f44"/>
+  <circle cx="480" cy="308" r="5" fill="#a4ccfb"/>
   <text x="450" y="137" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-size="28" font-weight="700">SEDE CHIMBOTE</text>
-  <text x="450" y="449" text-anchor="middle" fill="#36565a" font-family="Arial,sans-serif" font-size="18">REEMPLAZAR POR FOTOGRAFÍA REAL DE LA SEDE</text>
+  <text x="450" y="449" text-anchor="middle" fill="#231f44" font-family="Arial,sans-serif" font-size="18">REEMPLAZAR POR FOTOGRAFÍA REAL DE LA SEDE</text>
 </svg>
