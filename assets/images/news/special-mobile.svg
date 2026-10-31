@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1350">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f8fdff"/><stop offset="1" stop-color="#dff2ff"/></linearGradient></defs>
+  <rect width="1080" height="1350" fill="url(#g)"/><circle cx="850" cy="720" r="380" fill="#a4ccfb" opacity=".28"/>
+  <path d="M540 510c120-164 400-66 400 154 0 258-314 445-400 510-86-65-400-252-400-510 0-220 280-318 400-154Z" fill="#fff" opacity=".95"/><path d="M540 670c55-76 180-31 180 72 0 116-138 200-180 234-42-34-180-118-180-234 0-103 125-148 180-72Z" fill="#a4ccfb"/>
+  <rect x="80" y="90" width="270" height="68" rx="34" fill="#ccecfc" opacity=".9"/><text x="215" y="134" text-anchor="middle" font-family="Arial" font-size="25" font-weight="800" fill="#4c76a8" letter-spacing="2">TEMPORADA</text>
+  <text x="80" y="260" font-family="Arial" font-size="70" font-weight="800" fill="#231f44">Fechas que</text><text x="80" y="340" font-family="Arial" font-size="70" font-weight="800" fill="#231f44">nos unen</text>
+</svg>

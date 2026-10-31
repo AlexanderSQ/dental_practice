@@ -199,8 +199,118 @@
   $$(".js-map-link").forEach((link) => {
     link.addEventListener("click", () => trackEvent("map_click", { destination: link.href }));
   });
-  $$(".news-card > a").forEach((link, index) => {
+  $$(".news-banner-link").forEach((link, index) => {
     link.addEventListener("click", () => trackEvent("news_click", { position: index + 1 }));
+  });
+
+  // Carrusel de noticias: autoplay pausado al interactuar y desactivado con reduced motion.
+  $$("[data-news-carousel]").forEach((carousel) => {
+    const track = $(".news-track", carousel);
+    const slides = $$(".news-slide", carousel);
+    const prev = $(".news-prev", carousel);
+    const next = $(".news-next", carousel);
+    const dotsContainer = $(".news-dots", carousel);
+    const status = $(".news-status", carousel);
+    const autoplayToggle = $(".news-autoplay-toggle", carousel);
+    if (!track || slides.length === 0) return;
+
+    let current = 0;
+    let pointerStartX = null;
+    let autoplayId = null;
+    let userPaused = false;
+    const AUTOPLAY_MS = 8000;
+
+    const dots = slides.map((_, index) => {
+      const dot = document.createElement("button");
+      dot.type = "button";
+      dot.className = "news-dot";
+      dot.setAttribute("aria-label", `Ir a noticia ${index + 1}`);
+      dot.addEventListener("click", () => {
+        goTo(index, "dot");
+        restartAutoplay();
+      });
+      dotsContainer?.appendChild(dot);
+      return dot;
+    });
+
+    function goTo(index, source = "control") {
+      current = (index + slides.length) % slides.length;
+      track.style.transform = `translateX(-${current * 100}%)`;
+      slides.forEach((slide, slideIndex) => {
+        const active = slideIndex === current;
+        slide.setAttribute("aria-hidden", String(!active));
+        $(".news-banner-link", slide)?.setAttribute("tabindex", active ? "0" : "-1");
+      });
+      dots.forEach((dot, dotIndex) => dot.setAttribute("aria-current", String(dotIndex === current)));
+      if (status) status.textContent = `${current + 1} / ${slides.length}`;
+      if (source !== "initial" && source !== "autoplay") trackEvent("news_slide", { position: current + 1, source });
+    }
+
+    function stopAutoplay() {
+      if (autoplayId) window.clearInterval(autoplayId);
+      autoplayId = null;
+    }
+
+    function startAutoplay() {
+      if (reducedMotion || userPaused || document.hidden || slides.length < 2) return;
+      stopAutoplay();
+      autoplayId = window.setInterval(() => goTo(current + 1, "autoplay"), AUTOPLAY_MS);
+    }
+
+    function restartAutoplay() {
+      stopAutoplay();
+      startAutoplay();
+    }
+
+    prev?.addEventListener("click", () => { goTo(current - 1, "previous"); restartAutoplay(); });
+    next?.addEventListener("click", () => { goTo(current + 1, "next"); restartAutoplay(); });
+
+    carousel.addEventListener("keydown", (event) => {
+      if (event.key === "ArrowLeft") { event.preventDefault(); goTo(current - 1, "keyboard"); restartAutoplay(); }
+      if (event.key === "ArrowRight") { event.preventDefault(); goTo(current + 1, "keyboard"); restartAutoplay(); }
+    });
+
+    carousel.addEventListener("pointerdown", (event) => {
+      if (event.pointerType === "mouse") return;
+      pointerStartX = event.clientX;
+      stopAutoplay();
+    }, { passive: true });
+
+    carousel.addEventListener("pointerup", (event) => {
+      if (pointerStartX === null) return;
+      const distance = event.clientX - pointerStartX;
+      pointerStartX = null;
+      if (Math.abs(distance) >= 48) goTo(current + (distance < 0 ? 1 : -1), "swipe");
+      startAutoplay();
+    }, { passive: true });
+
+    carousel.addEventListener("mouseenter", stopAutoplay);
+    carousel.addEventListener("mouseleave", startAutoplay);
+    carousel.addEventListener("focusin", stopAutoplay);
+    carousel.addEventListener("focusout", (event) => {
+      if (!carousel.contains(event.relatedTarget)) startAutoplay();
+    });
+
+    document.addEventListener("visibilitychange", () => {
+      if (document.hidden) stopAutoplay(); else startAutoplay();
+    });
+
+    if (autoplayToggle) {
+      if (reducedMotion) {
+        autoplayToggle.hidden = true;
+      } else {
+        autoplayToggle.addEventListener("click", () => {
+          userPaused = !userPaused;
+          autoplayToggle.setAttribute("aria-pressed", String(userPaused));
+          autoplayToggle.textContent = userPaused ? "Reanudar" : "Pausar";
+          if (userPaused) stopAutoplay(); else startAutoplay();
+          trackEvent("news_autoplay_toggle", { paused: userPaused });
+        });
+      }
+    }
+
+    goTo(0, "initial");
+    startAutoplay();
   });
 
   // Carrusel de testimonios: manual, accesible y sin autoplay.

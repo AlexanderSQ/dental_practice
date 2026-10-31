@@ -1,1 +1,22 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675"><defs><linearGradient id="g" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#a4ccfb"/><stop offset="1" stop-color="#ccecfc"/></linearGradient></defs><rect width="1200" height="675" rx="44" fill="url(#g)"/><circle cx="1020" cy="100" r="210" fill="#fff" opacity=".28"/><circle cx="1090" cy="600" r="320" fill="#231f44" opacity=".08"/><path d="M840 210c62-46 115-22 168 2 53-24 106-48 168-2 98 74 39 208 9 286-35 95-52 126-106 126-44 0-28-129-71-129s-27 129-71 129c-54 0-71-31-106-126-30-78-89-212 9-286Z" fill="none" stroke="#231f44" stroke-width="26" opacity=".18"/><text x="84" y="130" font-family="Arial,sans-serif" font-size="32" font-weight="700" fill="#231f44" opacity=".65">BANNER PROMOCIONAL</text><text x="84" y="270" font-family="Arial,sans-serif" font-size="70" font-weight="800" fill="#231f44">Promoción del mes</text><text x="84" y="338" font-family="Arial,sans-serif" font-size="31" fill="#231f44" opacity=".76">Reemplaza este banner por la campaña vigente.</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 720">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#dff2ff"/><stop offset="1" stop-color="#a4ccfb"/></linearGradient>
+    <linearGradient id="tooth" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffffff"/><stop offset="1" stop-color="#f8fcff"/></linearGradient>
+  </defs>
+  <rect width="1600" height="720" fill="url(#bg)"/>
+  <circle cx="1325" cy="95" r="210" fill="#ffffff" opacity=".38"/>
+  <circle cx="145" cy="650" r="260" fill="#ffffff" opacity=".23"/>
+  <g transform="translate(1010 122)">
+    <path d="M175 55c88-66 171-21 226 13 55-34 138-79 226-13 137 103 54 292 12 402-49 134-74 177-151 177-63 0-39-182-87-182s-24 182-87 182c-77 0-102-43-151-177-42-110-125-299 12-402Z" fill="url(#tooth)" opacity=".92"/>
+    <path d="M390 166c34 0 63 28 63 63" fill="none" stroke="#a4ccfb" stroke-width="16" stroke-linecap="round"/>
+    <circle cx="470" cy="118" r="18" fill="#ffffff" opacity=".86"/>
+    <path d="m520 120 11 25 25 11-25 11-11 25-11-25-25-11 25-11z" fill="#ffffff" opacity=".85"/>
+  </g>
+  <g transform="translate(120 126)">
+    <rect width="242" height="58" rx="29" fill="#ffffff" opacity=".88"/>
+    <text x="121" y="38" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" font-weight="800" fill="#4c76a8" letter-spacing="2">PROMOCIÓN</text>
+    <text x="0" y="170" font-family="Arial, sans-serif" font-size="72" font-weight="800" fill="#231f44">Tu campaña</text>
+    <text x="0" y="250" font-family="Arial, sans-serif" font-size="72" font-weight="800" fill="#231f44">va aquí</text>
+    <text x="0" y="322" font-family="Arial, sans-serif" font-size="30" fill="#52617e">Reemplaza este banner por la promoción vigente.</text>
+  </g>
+</svg>

@@ -2,12 +2,12 @@
   <defs><linearGradient id="b" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ccecfc"/><stop offset="1" stop-color="#a4ccfb"/></linearGradient></defs>
   <rect width="900" height="470" fill="url(#b)"/>
   <rect x="120" y="95" width="660" height="305" rx="12" fill="#fff"/>
-  <rect x="120" y="95" width="660" height="65" rx="12" fill="#231f44"/>
-  <path d="M120 148h660" stroke="#231f44" stroke-width="20"/>
+  <rect x="120" y="95" width="660" height="65" rx="12" fill="#ffffff"/>
+  <path d="M120 148h660" stroke="#a4ccfb" stroke-width="20"/>
   <rect x="180" y="210" width="180" height="190" fill="#ccecfc"/>
   <rect x="540" y="210" width="180" height="190" fill="#ccecfc"/>
   <rect x="403" y="218" width="94" height="182" rx="7" fill="#231f44"/>
   <circle cx="480" cy="308" r="5" fill="#a4ccfb"/>
-  <text x="450" y="137" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-size="28" font-weight="700">SEDE CHIMBOTE</text>
+  <text x="450" y="137" text-anchor="middle" fill="#231f44" font-family="Arial,sans-serif" font-size="28" font-weight="700">SEDE 1 · NUEVO CHIMBOTE</text>
   <text x="450" y="449" text-anchor="middle" fill="#231f44" font-family="Arial,sans-serif" font-size="18">REEMPLAZAR POR FOTOGRAFÍA REAL DE LA SEDE</text>
 </svg>

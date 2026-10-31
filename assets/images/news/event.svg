@@ -1,1 +1,24 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675"><rect width="1200" height="675" rx="44" fill="#231f44"/><circle cx="1020" cy="145" r="245" fill="#a4ccfb" opacity=".18"/><path d="M840 185h250v250H840z" fill="none" stroke="#ccecfc" stroke-width="26" opacity=".22"/><path d="M895 140v90M1035 140v90M840 275h250" fill="none" stroke="#ccecfc" stroke-width="26" opacity=".22"/><text x="84" y="130" font-family="Arial,sans-serif" font-size="32" font-weight="700" fill="#a4ccfb">EVENTOS</text><text x="84" y="270" font-family="Arial,sans-serif" font-size="70" font-weight="800" fill="#fff">Campañas y actividades</text><text x="84" y="338" font-family="Arial,sans-serif" font-size="31" fill="#ccecfc">Publica jornadas, aperturas y eventos especiales.</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 720">
+  <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f7fcff"/><stop offset="1" stop-color="#ccecfc"/></linearGradient></defs>
+  <rect width="1600" height="720" fill="url(#bg)"/>
+  <circle cx="1400" cy="-30" r="270" fill="#a4ccfb" opacity=".35"/>
+  <circle cx="1300" cy="650" r="260" fill="#ffffff" opacity=".8"/>
+  <g transform="translate(1035 125)">
+    <rect x="0" y="75" width="430" height="385" rx="58" fill="#ffffff" opacity=".93"/>
+    <rect x="62" y="0" width="52" height="135" rx="26" fill="#87baf6"/>
+    <rect x="315" y="0" width="52" height="135" rx="26" fill="#87baf6"/>
+    <rect x="60" y="175" width="78" height="70" rx="18" fill="#ccecfc"/>
+    <rect x="176" y="175" width="78" height="70" rx="18" fill="#a4ccfb"/>
+    <rect x="292" y="175" width="78" height="70" rx="18" fill="#ccecfc"/>
+    <rect x="60" y="278" width="78" height="70" rx="18" fill="#a4ccfb"/>
+    <rect x="176" y="278" width="78" height="70" rx="18" fill="#ccecfc"/>
+    <path d="m349 301 17 39 40 17-40 17-17 40-17-40-39-17 39-17z" fill="#87baf6"/>
+  </g>
+  <g transform="translate(120 126)">
+    <rect width="200" height="58" rx="29" fill="#a4ccfb" opacity=".52"/>
+    <text x="100" y="38" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" font-weight="800" fill="#4c76a8" letter-spacing="2">EVENTO</text>
+    <text x="0" y="170" font-family="Arial, sans-serif" font-size="72" font-weight="800" fill="#231f44">Actividades</text>
+    <text x="0" y="250" font-family="Arial, sans-serif" font-size="72" font-weight="800" fill="#231f44">y campañas</text>
+    <text x="0" y="322" font-family="Arial, sans-serif" font-size="30" fill="#52617e">Comparte jornadas, charlas y eventos de la clínica.</text>
+  </g>
+</svg>

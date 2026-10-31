@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1350">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#eaf6ff"/><stop offset="1" stop-color="#a4ccfb"/></linearGradient></defs>
+  <rect width="1080" height="1350" fill="url(#g)"/><circle cx="880" cy="170" r="270" fill="#fff" opacity=".45"/><circle cx="140" cy="1230" r="290" fill="#fff" opacity=".25"/>
+  <path d="M355 485c90-68 175-22 231 13 56-35 141-81 231-13 140 105 55 299 12 412-50 137-75 181-154 181-64 0-40-186-89-186s-25 186-89 186c-79 0-104-44-154-181-43-113-128-307 12-412Z" fill="#fff" opacity=".94"/>
+  <rect x="80" y="90" width="270" height="68" rx="34" fill="#fff" opacity=".9"/><text x="215" y="134" text-anchor="middle" font-family="Arial" font-size="25" font-weight="800" fill="#4c76a8" letter-spacing="2">PROMOCIÓN</text>
+  <text x="80" y="260" font-family="Arial" font-size="70" font-weight="800" fill="#231f44">Tu campaña</text><text x="80" y="340" font-family="Arial" font-size="70" font-weight="800" fill="#231f44">va aquí</text>
+</svg>

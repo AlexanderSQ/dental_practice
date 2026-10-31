@@ -1,1 +1,18 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675"><defs><linearGradient id="g2" x1="0" x2="1"><stop stop-color="#ccecfc"/><stop offset="1" stop-color="#fff"/></linearGradient></defs><rect width="1200" height="675" rx="44" fill="url(#g2)"/><circle cx="1010" cy="340" r="250" fill="#a4ccfb" opacity=".4"/><path d="M1020 180v320M860 340h320M908 228l224 224M1132 228 908 452" stroke="#231f44" stroke-width="28" stroke-linecap="round" opacity=".14"/><text x="84" y="130" font-family="Arial,sans-serif" font-size="32" font-weight="700" fill="#231f44" opacity=".68">FECHAS ESPECIALES</text><text x="84" y="270" font-family="Arial,sans-serif" font-size="70" font-weight="800" fill="#231f44">Celebra con Sonríe Salud</text><text x="84" y="338" font-family="Arial,sans-serif" font-size="31" fill="#231f44" opacity=".72">Un espacio para mensajes y beneficios de temporada.</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 720">
+  <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffffff"/><stop offset="1" stop-color="#dff2ff"/></linearGradient></defs>
+  <rect width="1600" height="720" fill="url(#bg)"/>
+  <circle cx="1325" cy="330" r="330" fill="#a4ccfb" opacity=".28"/>
+  <circle cx="1450" cy="575" r="170" fill="#ccecfc" opacity=".85"/>
+  <g transform="translate(1070 125)">
+    <path d="M220 50c78-106 260-43 260 100 0 168-204 290-260 333-56-43-260-165-260-333C-40 7 142-56 220 50Z" fill="#ffffff" opacity=".94"/>
+    <path d="M220 145c36-50 118-20 118 47 0 76-90 131-118 153-28-22-118-77-118-153 0-67 82-97 118-47Z" fill="#a4ccfb" opacity=".9"/>
+    <path d="m420 75 18 42 42 18-42 18-18 42-18-42-42-18 42-18z" fill="#ffffff"/>
+  </g>
+  <g transform="translate(120 126)">
+    <rect width="226" height="58" rx="29" fill="#ccecfc" opacity=".82"/>
+    <text x="113" y="38" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" font-weight="800" fill="#4c76a8" letter-spacing="2">TEMPORADA</text>
+    <text x="0" y="170" font-family="Arial, sans-serif" font-size="72" font-weight="800" fill="#231f44">Fechas que</text>
+    <text x="0" y="250" font-family="Arial, sans-serif" font-size="72" font-weight="800" fill="#231f44">nos unen</text>
+    <text x="0" y="322" font-family="Arial, sans-serif" font-size="30" fill="#52617e">Beneficios, saludos y mensajes especiales.</text>
+  </g>
+</svg>
