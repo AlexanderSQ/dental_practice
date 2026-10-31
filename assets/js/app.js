@@ -390,12 +390,28 @@
 
       if (/\.(mp4|webm)(\?.*)?$/i.test(url)) {
         const video = document.createElement("video");
-        video.src = url;
         video.controls = true;
-        video.autoplay = true;
         video.playsInline = true;
         video.preload = "metadata";
+        video.setAttribute("controlsList", "nodownload");
+
+        const source = document.createElement("source");
+        source.src = url;
+        source.type = /\.webm(\?.*)?$/i.test(url) ? "video/webm" : "video/mp4";
+        video.appendChild(source);
+
+        video.addEventListener("error", () => {
+          const errorBox = document.createElement("div");
+          errorBox.className = "video-error";
+          errorBox.innerHTML = `<div><strong>No se pudo reproducir este video.</strong><p>Verifica que el archivo exista en <code>${url}</code> y, si es MP4, que esté codificado como H.264 (video) + AAC (audio).</p></div>`;
+          media.replaceChildren(errorBox);
+        }, { once: true });
+
         media.replaceChildren(video);
+        video.load();
+        video.play().catch(() => {
+          // Si el navegador bloquea el inicio automático, los controles quedan disponibles.
+        });
       } else if (/^(https:\/\/)?(www\.)?(youtube\.com\/embed\/|player\.vimeo\.com\/video\/)/i.test(url)) {
         const iframe = document.createElement("iframe");
         iframe.src = url;

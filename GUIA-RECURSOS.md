@@ -147,3 +147,23 @@ El logo oficial ya está en PNG transparente y no necesita modificación.
 | Sedes | PNG | 1600×900 |
 | Video horizontal | MP4 H.264/AAC | 1920×1080 |
 | Video vertical | MP4 H.264/AAC | 1080×1920 |
+
+## Ajuste V6: imagen Hero y videos locales
+
+### Hero principal
+La imagen sigue siendo `assets/images/hero-dental.png`, pero en escritorio el layout le asigna una columna más amplia (hasta aproximadamente 700 px dentro del contenedor). La imagen conserva su proporción original (`height: auto` + `object-fit: contain`), de modo que una futura versión más horizontal no será recortada por CSS.
+
+Si vas a mantener la composición actual, **1400x1400 PNG** funciona bien. Si deseas que el Hero se perciba todavía más ancho, puedes exportarla como **1600x1200 PNG (4:3)**; la V6 respetará esa proporción sin recortarla.
+
+### Testimonios MP4
+El HTML V6 ya contiene:
+
+- `assets/videos/testimonio-01.mp4`
+- `assets/videos/testimonio-02.mp4`
+- `assets/videos/testimonio-03.mp4`
+
+No basta con que el archivo termine en `.mp4`: para máxima compatibilidad web se recomienda **H.264/AVC para video + AAC para audio**.
+
+Si el navegador no puede reproducirlo, la interfaz muestra una advertencia para revisar la ruta o el códec.
+
+Para pruebas locales usa un servidor HTTP (por ejemplo Live Server) en lugar de abrir la página directamente mediante `file://`.
