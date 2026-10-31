@@ -1,0 +1,26 @@
+SONRÍE SALUD - FORMATO RECOMENDADO PARA TESTIMONIOS
+
+FORMATO PRINCIPAL
+- Archivo: .mp4
+- Codec de video: H.264 / AVC
+- Codec de audio: AAC
+- FPS: 25 o 30
+- Resolución horizontal recomendada: 1920x1080 (16:9)
+- Resolución vertical admitida: 1080x1920 (9:16)
+- Bitrate orientativo: 3 a 6 Mbps para 1080p
+- Duración sugerida por testimonio: 30 a 90 segundos
+- Peso práctico si el video se aloja en la propia web: idealmente 10 a 30 MB por archivo
+
+NOMBRES SUGERIDOS
+- testimonio-01.mp4
+- testimonio-02.mp4
+- testimonio-03.mp4
+
+RUTA
+assets/videos/
+
+En index.html, cada botón .video-play contiene data-video-url.
+Ejemplo:
+data-video-url="assets/videos/testimonio-01.mp4"
+
+Si el original está en MOV, especialmente HEVC/H.265 de iPhone, conviene convertirlo a MP4 H.264 antes de publicarlo para mejorar la compatibilidad entre navegadores.

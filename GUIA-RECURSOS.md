@@ -1,174 +1,149 @@
-# Guía de imágenes, banners y videos — Sonríe Salud V3
+# Guía de recursos PNG y videos — Sonríe Salud V5
 
-Esta guía indica **qué archivos puedes reemplazar**, en qué sección aparecen y qué formato conviene usar. Si mantienes el mismo nombre y la misma ruta, **no necesitas modificar el HTML**.
+La V5 queda preparada para que las **imágenes principales que vas a reemplazar sean PNG**. Si conservas exactamente el nombre y la ruta indicados, puedes reemplazar el archivo sin modificar el HTML.
 
-## 1. Logo
+> Importante: PNG funciona muy bien para transparencias, pero puede pesar bastante. Antes de publicar, optimiza las imágenes con Squoosh, TinyPNG o una herramienta equivalente para mantener buena velocidad en celulares.
 
-| Sección | Archivo actual | Recomendación |
-|---|---|---|
-| Header, hero y footer | `assets/images/logo-sonrie-salud.png` | PNG con fondo transparente. Ideal: 800 a 1600 px de ancho. Mantener la proporción original. Peso sugerido: < 180 KB. |
+## 1. Hero / portada principal
 
-**Importante:** el logo actual es blanco/transparente, por eso el header lo coloca sobre una pequeña cápsula oscura. No es necesario cambiar el color del logo.
+| Uso | Archivo | Medida recomendada | Relación |
+|---|---|---:|---:|
+| Imagen principal del Hero | `assets/images/hero-dental.png` | **1400 × 1400 px** | 1:1 |
 
-## 2. Imagen principal del Hero
+- Formato: **PNG**.
+- Si el odontólogo/persona debe verse recortado sobre el fondo de la web, usa PNG con transparencia.
+- Mantén el sujeto centrado y deja aire alrededor para responsive.
+- Peso objetivo: idealmente **< 700 KB**.
 
-| Sección | Archivo actual | Tamaño recomendado | Formato |
-|---|---|---:|---|
-| Portada principal | `assets/images/hero-dental.svg` | 1400 × 1400 px, relación 1:1 | WebP recomendado; JPG o PNG si hace falta transparencia |
-
-- Si usas una fotografía real: WebP, calidad 75–85, idealmente < 350 KB.
-- Mantén al paciente/odontólogo centrado para que el recorte responda bien en móvil.
-- Evita texto dentro de la fotografía.
-
-## 3. Tarjetas de servicios — imágenes tipo marca de agua
+## 2. Servicios — iconos/ilustraciones PNG
 
 | Servicio | Archivo |
 |---|---|
-| Odontología general | `assets/images/services/general.svg` |
-| Profilaxis / prevención | `assets/images/services/prevention.svg` |
-| Ortodoncia | `assets/images/services/ortho.svg` |
-| Estética dental | `assets/images/services/aesthetic.svg` |
-| Endodoncia | `assets/images/services/endo.svg` |
-| Implantes y prótesis | `assets/images/services/implant.svg` |
+| Odontología general | `assets/images/services/general.png` |
+| Profilaxis / prevención | `assets/images/services/prevention.png` |
+| Ortodoncia | `assets/images/services/ortho.png` |
+| Estética dental | `assets/images/services/aesthetic.png` |
+| Endodoncia | `assets/images/services/endo.png` |
+| Implantes y prótesis | `assets/images/services/implant.png` |
 
-**Formato ideal:** SVG. Alternativa: PNG/WebP transparente de 600 × 600 px, relación 1:1 y < 100 KB.
+- Medida recomendada: **600 × 600 px**.
+- Formato: **PNG transparente**.
+- Relación: 1:1.
+- Diseños simples, con buena silueta y sin fondo rectangular.
+- Peso objetivo: **< 150 KB** cada uno.
+- El mismo PNG se utiliza como icono frontal y como marca de agua de la tarjeta.
 
-Estas imágenes se muestran con opacidad baja, por lo que deben ser simples, limpias y reconocibles. Evita fotografías complejas en esta sección.
+## 3. Noticias y alertas — banners PNG
 
-## 4. Noticias y alertas — carrusel de banners
-
-El carrusel admite una versión horizontal para escritorio y una versión vertical para móvil. Esto evita que textos o personas se corten en pantallas pequeñas.
+El carrusel usa una imagen para escritorio y otra para móvil para evitar recortes incorrectos.
 
 | Slide | Escritorio | Móvil |
 |---|---|---|
-| Promoción | `assets/images/news/promo.svg` | `assets/images/news/promo-mobile.svg` |
-| Evento | `assets/images/news/event.svg` | `assets/images/news/event-mobile.svg` |
-| Fecha especial | `assets/images/news/special.svg` | `assets/images/news/special-mobile.svg` |
+| Promoción | `assets/images/news/promo.png` | `assets/images/news/promo-mobile.png` |
+| Evento | `assets/images/news/event.png` | `assets/images/news/event-mobile.png` |
+| Fecha especial | `assets/images/news/special.png` | `assets/images/news/special-mobile.png` |
 
-### Banner de escritorio
-- Tamaño recomendado: **1600 × 720 px**.
-- Relación aproximada: **20:9**.
-- Formato recomendado: **WebP**.
-- Peso ideal: **180–350 KB**.
-- JPG también funciona para fotografías.
+### Escritorio
+- **1600 × 720 px**.
+- PNG.
+- Relación aproximada 20:9.
+- Peso objetivo: **< 700 KB**.
 
-### Banner móvil
-- Tamaño recomendado: **1080 × 1350 px**.
-- Relación: **4:5**.
-- Formato recomendado: **WebP**.
-- Peso ideal: **150–300 KB**.
+### Móvil
+- **1080 × 1350 px**.
+- PNG.
+- Relación 4:5.
+- Peso objetivo: **< 600 KB**.
 
-### Recomendación de diseño
-- Coloca logos, rostros y mensajes importantes lejos de los bordes.
-- Si el banner ya contiene texto, mantén el mensaje corto y con alto contraste.
-- Es mejor que el detalle extenso permanezca en el texto HTML del carrusel, no incrustado en la imagen.
+Mantén logos, rostros y textos importantes alejados de los bordes. Si el banner contiene mucho texto, crea una versión específica para móvil en lugar de usar exactamente la misma composición.
 
-Si cambias de `.svg` a `.webp`, actualiza en `index.html` tanto el `src` de escritorio como el `srcset` móvil.
+## 4. Nuestra identidad — fotografía institucional PNG
 
-## 5. Testimonios — portadas de video
+| Uso | Archivo | Medida recomendada | Relación |
+|---|---|---:|---:|
+| Imagen de identidad / experiencia | `assets/images/identity/experiencia-sonrie.png` | **1200 × 1500 px** | 4:5 |
 
-| Testimonio | Portada actual |
-|---|---|
-| 1 | `assets/images/testimonial-1.svg` |
-| 2 | `assets/images/testimonial-2.svg` |
-| 3 | `assets/images/testimonial-3.svg` |
-| 4 | `assets/images/testimonial-4.svg` |
+Puede ser una fotografía del equipo, odontólogo con paciente, atención infantil/adulta o un ambiente reconocible de Sonríe Salud.
 
-**Portada recomendada:** 1280 × 720 px, relación 16:9, WebP/JPG, < 220 KB.
+- Formato: PNG.
+- Peso objetivo: idealmente **< 900 KB**.
+- Evita colocar texto importante en la parte inferior porque la web agrega una pequeña tarjeta informativa superpuesta.
 
-La portada aparece antes de que el visitante reproduzca el video. Lo ideal es usar un fotograma nítido del paciente, siempre con autorización para publicarlo.
+## 5. Sedes — fotografías PNG
 
-## 6. Videos testimoniales
+| Sede | Archivo | Medida recomendada |
+|---|---|---:|
+| Nuevo Chimbote · Sede 1 | `assets/images/clinic-1.png` | **1600 × 900 px** |
+| Nuevo Chimbote · Sede 2 | `assets/images/clinic-2.png` | **1600 × 900 px** |
 
-La web admite dos alternativas:
+- PNG.
+- Relación 16:9.
+- Preferible foto horizontal, bien iluminada y nítida.
+- Puede ser fachada o ambiente interior reconocible.
+- Peso objetivo: **< 900 KB** por fotografía.
 
-### Opción recomendada — YouTube o Vimeo
-Usa una URL de inserción en el atributo `data-video-url` del botón del testimonio dentro de `index.html`.
+## 6. Testimonios — formato de video
 
-Ejemplo:
+Para los videos que vas a probar, usa preferentemente:
 
-```html
-<button
-  class="video-play"
-  type="button"
-  data-video-url="https://www.youtube.com/embed/ID_DEL_VIDEO">
-</button>
+- **Contenedor:** MP4 (`.mp4`).
+- **Codec de video:** H.264 / AVC.
+- **Audio:** AAC.
+- **FPS:** 25 o 30.
+- **Horizontal:** 1920 × 1080, relación 16:9.
+- **Vertical:** 1080 × 1920, relación 9:16; la V5 evita deformarlo y lo muestra con `object-fit: contain`.
+- **Bitrate orientativo:** 3–6 Mbps en 1080p.
+- **Duración sugerida:** 30–90 segundos.
+- **Peso práctico si se alojará directamente en la web:** 10–30 MB por testimonio.
+
+Guarda los archivos, por ejemplo, como:
+
+```text
+assets/videos/testimonio-01.mp4
+assets/videos/testimonio-02.mp4
+assets/videos/testimonio-03.mp4
 ```
 
-Ventajas: la página pesa menos, el streaming se adapta a la conexión y no necesitas alojar archivos grandes en tu servidor.
-
-### Opción local — MP4 / WebM
-Puedes colocar videos en `assets/videos/` y usar, por ejemplo:
+Y en `index.html` usa:
 
 ```html
 data-video-url="assets/videos/testimonio-01.mp4"
 ```
 
-**Especificación recomendada:**
-- Contenedor: MP4.
-- Video: H.264.
-- Audio: AAC.
-- Resolución ideal: **1920 × 1080 px (1080p)**.
-- Relación: **16:9**.
-- FPS: 25 o 30.
-- Bitrate orientativo: 3–6 Mbps.
-- Peso ideal por video: preferiblemente < 20–30 MB si se aloja localmente.
+La web ya carga el video **solo cuando el usuario presiona Play**, por lo que no descarga todos los testimonios al abrir la página.
 
-También se admiten videos verticales 1080 × 1920, pero para una web de escritorio se recomienda editar una versión 16:9 o usar una portada 16:9 para mantener una presentación consistente.
+### ¿Puedo usar MOV?
 
-## 7. Fotografías de sedes
+Puedes enviarme un `.mov` para trabajar, pero **no recomiendo publicarlo directamente**. Muchos iPhone graban MOV con HEVC/H.265 y la compatibilidad web no es tan uniforme. Para producción conviene convertirlo a MP4 H.264 + AAC.
 
-| Sección | Archivo actual |
-|---|---|
-| Nuevo Chimbote — Sede 1 | `assets/images/clinic-1.svg` |
-| Nuevo Chimbote — Sede 2 | `assets/images/clinic-2.svg` |
+### ¿Puedo subir 2 o 3 videos para probar?
 
-**Tamaño recomendado:** 1600 × 900 px, relación 16:9.
+Sí. Con **2 o 3 videos MP4** podemos probar perfectamente el carrusel. Puedes adjuntarlos tal como los tienes; si vienen en MOV u otro formato, primero revisamos codec, orientación, resolución y peso y luego los dejamos en un formato web compatible.
 
-**Formato:** WebP recomendado; JPG si proviene directamente de fotografía. Peso sugerido: 200–400 KB.
+## 7. Portada de cada testimonio
 
-Idealmente usa una foto exterior o interior reconocible de cada sede, con buena iluminación y sin información sensible visible.
+Antes de reproducir el video se muestra una portada. Puede mantenerse como recurso separado.
 
-## 8. Imagen para compartir en WhatsApp / Facebook
+- Medida recomendada: **1280 × 720 px**.
+- PNG si deseas unificar el flujo de trabajo.
+- Relación 16:9.
+- Ideal: fotograma limpio del testimonio, con autorización del paciente.
 
-Archivo: `assets/images/og-clinica.jpg`
+## 8. Logo
 
-- Tamaño: **1200 × 630 px**.
-- Formato: JPG.
-- Peso: < 500 KB.
-- Debe incluir marca, una fotografía clara y un mensaje corto.
+`assets/images/logo-sonrie-salud.png`
 
-Esta imagen se usa cuando alguien comparte la URL de la web en redes o mensajería compatible con Open Graph.
+El logo oficial ya está en PNG transparente y no necesita modificación.
 
-## 9. Favicon
+## Resumen rápido
 
-Archivo: `assets/images/favicon.svg`
-
-Puedes mantener SVG. Si necesitas compatibilidad adicional, también puedes generar `favicon.ico` y PNG de 32 × 32 / 180 × 180.
-
-## 10. Datos que todavía debes reemplazar antes de publicar
-
-1. `WHATSAPP_NUMBER` en `assets/js/app.js`.
-2. Direcciones exactas de **Nuevo Chimbote — Sede 1** y **Sede 2** en `index.html`.
-3. Enlaces exactos de Google Maps de ambas sedes.
-4. Teléfono y direcciones en el bloque JSON-LD de `index.html`.
-5. Dominio final `https://www.tudominio.pe/` en SEO, Open Graph, sitemap y JSON-LD.
-6. `GA_MEASUREMENT_ID` si se activa Google Analytics 4.
-7. Banners, fotos de sedes y testimonios reales.
-
-## Regla práctica para imágenes web
-
-Siempre que sea posible usa **WebP** para fotografías y banners, **SVG** para iconos/ilustraciones y **PNG** solo cuando necesites transparencia compleja. El objetivo es conservar buena calidad con un peso bajo para que la web cargue rápido en celulares.
-
-
-## Recursos incorporados en V4
-
-La franja “Tu visita, paso a paso” utiliza tres SVG livianos y reemplazables:
-
-| Paso | Archivo | Uso | Recomendación si se reemplaza |
-|---|---|---|---|
-| Evaluación | `assets/images/process/evaluate.svg` | Evalúa tu sonrisa | SVG cuadrado, `viewBox` 1:1 |
-| Opciones | `assets/images/process/options.svg` | Conoce tus opciones | SVG cuadrado, `viewBox` 1:1 |
-| Agenda | `assets/images/process/agenda.svg` | Agenda fácilmente | SVG cuadrado, `viewBox` 1:1 |
-
-Los servicios continúan usando los mismos archivos de `assets/images/services/`, pero en V4 aparecen dos veces visualmente: como icono principal de la tarjeta y como marca de agua de fondo. Por ello, reemplazar uno de esos SVG actualiza ambos usos automáticamente.
+| Sector marcado | Formato | Tamaño |
+|---|---|---:|
+| Hero | PNG | 1400×1400 |
+| Servicios | PNG transparente | 600×600 |
+| Noticias desktop | PNG | 1600×720 |
+| Noticias móvil | PNG | 1080×1350 |
+| Identidad | PNG | 1200×1500 |
+| Sedes | PNG | 1600×900 |
+| Video horizontal | MP4 H.264/AAC | 1920×1080 |
+| Video vertical | MP4 H.264/AAC | 1080×1920 |

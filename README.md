@@ -1,8 +1,8 @@
-# Sonríe Salud Web · V4
+# Sonríe Salud Web · V5
 
 Esta versión refuerza la conversión visual de la landing manteniendo la identidad principal de Sonríe Salud.
 
-## Cambios V4
+## Cambios V5
 
 - Barra de navegación conservada en `#231f44`, con enlaces blancos y CTA celeste.
 - Bloque de proceso rediseñado como ruta visual de 3 pasos con iconografía odontológica.
@@ -74,3 +74,10 @@ También actualiza esos datos en el JSON-LD del `<head>`.
 ## Contenido multimedia
 
 Consulta `GUIA-RECURSOS.md` para ver las rutas exactas, dimensiones, formatos y pesos recomendados de cada imagen, banner, portada y video.
+
+## Cambios V5
+
+- Hero, servicios, banners de noticias, imagen de identidad y fotografías de sedes quedan mapeados a **PNG**.
+- La sección de identidad ahora contiene un archivo de imagen reemplazable: `assets/images/identity/experiencia-sonrie.png`.
+- Los testimonios locales están preparados para MP4 H.264/AAC y los videos verticales ya no se deforman.
+- Consulta `GUIA-RECURSOS.md` y `assets/videos/FORMATO-VIDEOS.txt` para medidas, nombres y formatos.
