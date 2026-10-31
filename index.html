@@ -145,69 +145,169 @@
       </div>
     </section>
 
-    <section class="intro-band" aria-label="Proceso de atención">
-      <div class="container intro-grid">
-        <div><span class="intro-icon">01</span><p><strong>Evalúa</strong> tu salud bucal con orientación profesional.</p></div>
-        <div><span class="intro-icon">02</span><p><strong>Conoce</strong> tus alternativas de tratamiento.</p></div>
-        <div><span class="intro-icon">03</span><p><strong>Agenda</strong> en la sede que prefieras por WhatsApp.</p></div>
+    <section class="intro-band" aria-labelledby="care-path-title">
+      <div class="container">
+        <div class="care-path-heading reveal">
+          <div>
+            <span class="care-path-kicker">Tu visita, paso a paso</span>
+            <h2 id="care-path-title">Una experiencia dental simple, clara y sin vueltas</h2>
+          </div>
+          <p>Te acompañamos desde la primera evaluación hasta la elección del tratamiento y la coordinación de tu cita.</p>
+        </div>
+
+        <div class="intro-grid care-path">
+          <article class="intro-step reveal">
+            <div class="intro-step-top">
+              <span class="intro-art" aria-hidden="true"><img src="assets/images/process/evaluate.svg" alt=""></span>
+              <span class="intro-number">01</span>
+            </div>
+            <h3>Evalúa tu sonrisa</h3>
+            <p>Conoce el estado de tu salud bucal con una orientación profesional y cercana.</p>
+            <span class="intro-detail"><b>Primero:</b> entendemos lo que necesitas.</span>
+          </article>
+
+          <article class="intro-step reveal">
+            <div class="intro-step-top">
+              <span class="intro-art" aria-hidden="true"><img src="assets/images/process/options.svg" alt=""></span>
+              <span class="intro-number">02</span>
+            </div>
+            <h3>Conoce tus opciones</h3>
+            <p>Te explicamos las alternativas de tratamiento de forma sencilla para que puedas decidir con confianza.</p>
+            <span class="intro-detail"><b>Después:</b> revisamos las mejores alternativas.</span>
+          </article>
+
+          <article class="intro-step reveal">
+            <div class="intro-step-top">
+              <span class="intro-art" aria-hidden="true"><img src="assets/images/process/agenda.svg" alt=""></span>
+              <span class="intro-number">03</span>
+            </div>
+            <h3>Agenda fácilmente</h3>
+            <p>Elige la sede de Nuevo Chimbote que prefieras y envíanos tu solicitud directamente por WhatsApp.</p>
+            <a class="intro-cta js-whatsapp-service" href="#" data-service="Consulta odontológica">
+              <span class="intro-cta-icon" aria-hidden="true">✦</span>
+              <span>Quiero agendar</span>
+              <b aria-hidden="true">→</b>
+            </a>
+          </article>
+        </div>
       </div>
     </section>
 
-    <section class="section-pad" id="servicios">
+    <section class="section-pad services-section" id="servicios">
       <div class="container">
-        <div class="section-heading reveal">
+        <div class="section-heading services-heading reveal">
           <div>
             <div class="eyebrow"><span></span> Nuestros servicios</div>
-            <h2>Soluciones dentales para cada etapa de tu sonrisa</h2>
+            <h2>Encuentra el cuidado que tu sonrisa necesita</h2>
           </div>
-          <p>Explora nuestros tratamientos y consulta disponibilidad directamente por WhatsApp. Cada tarjeta utiliza una ilustración ligera para hacer la navegación más visual y fácil de reconocer.</p>
+          <p>Prevención, estética y tratamientos para niños y adultos. Elige un servicio y escríbenos por WhatsApp para recibir orientación y consultar disponibilidad.</p>
         </div>
 
         <div class="services-grid">
-          <article class="service-card reveal" style="--service-art:url('assets/images/services/general.svg')">
-            <span class="service-kicker">Salud bucal</span>
-            <h3>Odontología general</h3>
-            <p>Evaluación integral, diagnóstico y orientación para cuidar tu salud bucal.</p>
-            <a href="#" class="service-link js-whatsapp-service" data-service="Odontología general">Consultar servicio <span>↗</span></a>
+          <article class="service-card reveal" style="--service-art:url('assets/images/services/general.svg'); --service-accent:#8fc7f6;">
+            <div class="service-card-head">
+              <span class="service-icon-wrap" aria-hidden="true"><img src="assets/images/services/general.svg" alt=""></span>
+              <span class="service-kicker">Salud bucal</span>
+            </div>
+            <div class="service-copy">
+              <p class="service-hook">Empieza por conocer cómo está tu sonrisa.</p>
+              <h3>Odontología general</h3>
+              <p>Evaluación integral, diagnóstico y orientación para cuidar dientes y encías en cada etapa.</p>
+            </div>
+            <a href="#" class="service-link js-whatsapp-service" data-service="Odontología general">
+              <span class="service-cta-icon" aria-hidden="true">✆</span>
+              <span>Consultar por WhatsApp</span>
+              <b aria-hidden="true">→</b>
+            </a>
           </article>
 
-          <article class="service-card reveal" style="--service-art:url('assets/images/services/prevention.svg')">
-            <span class="service-kicker">Prevención</span>
-            <h3>Profilaxis y prevención</h3>
-            <p>Limpieza dental y controles preventivos para mantener dientes y encías saludables.</p>
-            <a href="#" class="service-link js-whatsapp-service" data-service="Profilaxis y prevención">Consultar servicio <span>↗</span></a>
+          <article class="service-card reveal" style="--service-art:url('assets/images/services/prevention.svg'); --service-accent:#9bded8;">
+            <div class="service-card-head">
+              <span class="service-icon-wrap" aria-hidden="true"><img src="assets/images/services/prevention.svg" alt=""></span>
+              <span class="service-kicker">Prevención</span>
+            </div>
+            <div class="service-copy">
+              <p class="service-hook">Una sonrisa limpia hoy ayuda a cuidarla mañana.</p>
+              <h3>Profilaxis y prevención</h3>
+              <p>Limpieza dental y controles preventivos para mantener una boca saludable y fresca.</p>
+            </div>
+            <a href="#" class="service-link js-whatsapp-service" data-service="Profilaxis y prevención">
+              <span class="service-cta-icon" aria-hidden="true">✆</span>
+              <span>Consultar por WhatsApp</span>
+              <b aria-hidden="true">→</b>
+            </a>
           </article>
 
-          <article class="service-card featured reveal" style="--service-art:url('assets/images/services/ortho.svg')">
-            <span class="service-badge">Servicio destacado</span>
-            <span class="service-kicker">Alineación dental</span>
-            <h3>Ortodoncia</h3>
-            <p>Evaluación para mejorar alineación dental, mordida y estética de tu sonrisa.</p>
-            <a href="#" class="service-link js-whatsapp-service" data-service="Ortodoncia">Consultar servicio <span>↗</span></a>
+          <article class="service-card featured reveal" style="--service-art:url('assets/images/services/ortho.svg'); --service-accent:#a4ccfb;">
+            <span class="service-badge">Más consultado</span>
+            <div class="service-card-head">
+              <span class="service-icon-wrap" aria-hidden="true"><img src="assets/images/services/ortho.svg" alt=""></span>
+              <span class="service-kicker">Alineación dental</span>
+            </div>
+            <div class="service-copy">
+              <p class="service-hook">Alinea tu sonrisa y gana confianza al sonreír.</p>
+              <h3>Ortodoncia</h3>
+              <p>Evaluación de alineación, mordida y estética dental para encontrar la alternativa adecuada.</p>
+            </div>
+            <a href="#" class="service-link js-whatsapp-service" data-service="Ortodoncia">
+              <span class="service-cta-icon" aria-hidden="true">✆</span>
+              <span>Quiero consultar ortodoncia</span>
+              <b aria-hidden="true">→</b>
+            </a>
           </article>
 
-          <article class="service-card reveal" style="--service-art:url('assets/images/services/aesthetic.svg')">
-            <span class="service-kicker">Armonía</span>
-            <h3>Estética dental</h3>
-            <p>Alternativas para mejorar forma, color y armonía de la sonrisa según evaluación.</p>
-            <a href="#" class="service-link js-whatsapp-service" data-service="Estética dental">Consultar servicio <span>↗</span></a>
+          <article class="service-card reveal" style="--service-art:url('assets/images/services/aesthetic.svg'); --service-accent:#b9c8fb;">
+            <div class="service-card-head">
+              <span class="service-icon-wrap" aria-hidden="true"><img src="assets/images/services/aesthetic.svg" alt=""></span>
+              <span class="service-kicker">Armonía</span>
+            </div>
+            <div class="service-copy">
+              <p class="service-hook">Pequeños detalles pueden transformar tu sonrisa.</p>
+              <h3>Estética dental</h3>
+              <p>Alternativas para mejorar forma, color y armonía de la sonrisa según una evaluación personalizada.</p>
+            </div>
+            <a href="#" class="service-link js-whatsapp-service" data-service="Estética dental">
+              <span class="service-cta-icon" aria-hidden="true">✆</span>
+              <span>Consultar por WhatsApp</span>
+              <b aria-hidden="true">→</b>
+            </a>
           </article>
 
-          <article class="service-card reveal" style="--service-art:url('assets/images/services/endo.svg')">
-            <span class="service-kicker">Conservación</span>
-            <h3>Endodoncia</h3>
-            <p>Tratamiento orientado a conservar piezas dentales afectadas internamente.</p>
-            <a href="#" class="service-link js-whatsapp-service" data-service="Endodoncia">Consultar servicio <span>↗</span></a>
+          <article class="service-card reveal" style="--service-art:url('assets/images/services/endo.svg'); --service-accent:#92d4ef;">
+            <div class="service-card-head">
+              <span class="service-icon-wrap" aria-hidden="true"><img src="assets/images/services/endo.svg" alt=""></span>
+              <span class="service-kicker">Conservación</span>
+            </div>
+            <div class="service-copy">
+              <p class="service-hook">Cuando es posible, conservar tu diente es prioridad.</p>
+              <h3>Endodoncia</h3>
+              <p>Tratamiento orientado a cuidar piezas dentales afectadas internamente y aliviar molestias.</p>
+            </div>
+            <a href="#" class="service-link js-whatsapp-service" data-service="Endodoncia">
+              <span class="service-cta-icon" aria-hidden="true">✆</span>
+              <span>Consultar por WhatsApp</span>
+              <b aria-hidden="true">→</b>
+            </a>
           </article>
 
-          <article class="service-card reveal" style="--service-art:url('assets/images/services/implant.svg')">
-            <span class="service-kicker">Rehabilitación</span>
-            <h3>Implantes y prótesis</h3>
-            <p>Evaluación de alternativas para recuperar funcionalidad y estética dental.</p>
-            <a href="#" class="service-link js-whatsapp-service" data-service="Implantes y prótesis">Consultar servicio <span>↗</span></a>
+          <article class="service-card reveal" style="--service-art:url('assets/images/services/implant.svg'); --service-accent:#87baf6;">
+            <div class="service-card-head">
+              <span class="service-icon-wrap" aria-hidden="true"><img src="assets/images/services/implant.svg" alt=""></span>
+              <span class="service-kicker">Rehabilitación</span>
+            </div>
+            <div class="service-copy">
+              <p class="service-hook">Recupera comodidad, función y seguridad al sonreír.</p>
+              <h3>Implantes y prótesis</h3>
+              <p>Evaluamos alternativas para recuperar piezas dentales y mejorar funcionalidad y estética.</p>
+            </div>
+            <a href="#" class="service-link js-whatsapp-service" data-service="Implantes y prótesis">
+              <span class="service-cta-icon" aria-hidden="true">✆</span>
+              <span>Consultar por WhatsApp</span>
+              <b aria-hidden="true">→</b>
+            </a>
           </article>
         </div>
-        <p class="content-note">* Ajusta esta lista según los tratamientos que Sonríe Salud ofrece actualmente.</p>
+        <p class="content-note services-note">¿No sabes qué tratamiento necesitas? <a href="#reservar">Solicita una evaluación</a> y te orientamos.</p>
       </div>
     </section>
 

@@ -1,4 +1,16 @@
-# Sonríe Salud — Web V3
+# Sonríe Salud Web · V4
+
+Esta versión refuerza la conversión visual de la landing manteniendo la identidad principal de Sonríe Salud.
+
+## Cambios V4
+
+- Barra de navegación conservada en `#231f44`, con enlaces blancos y CTA celeste.
+- Bloque de proceso rediseñado como ruta visual de 3 pasos con iconografía odontológica.
+- Servicios rediseñados con iconos protagonistas, marca de agua dental, frase gancho y CTA destacado.
+- Botones de servicios con color de marca, viñeta telefónica/WhatsApp y flecha de acción.
+- Ortodoncia se muestra como servicio más consultado para reforzar jerarquía visual.
+- Microinteracciones de elevación, iconos y CTA sin animaciones agresivas.
+- Nuevos recursos de proceso en `assets/images/process/`.
 
 Landing informativa responsive para Sonríe Salud, rediseñada con una estética más luminosa, familiar y dinámica. La identidad usa principalmente `#a4ccfb`, `#ccecfc` y blanco; `#231f44` queda reservado para texto, pequeños acentos y footer.
 

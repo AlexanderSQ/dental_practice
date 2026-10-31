@@ -159,3 +159,16 @@ Puedes mantener SVG. Si necesitas compatibilidad adicional, también puedes gene
 ## Regla práctica para imágenes web
 
 Siempre que sea posible usa **WebP** para fotografías y banners, **SVG** para iconos/ilustraciones y **PNG** solo cuando necesites transparencia compleja. El objetivo es conservar buena calidad con un peso bajo para que la web cargue rápido en celulares.
+
+
+## Recursos incorporados en V4
+
+La franja “Tu visita, paso a paso” utiliza tres SVG livianos y reemplazables:
+
+| Paso | Archivo | Uso | Recomendación si se reemplaza |
+|---|---|---|---|
+| Evaluación | `assets/images/process/evaluate.svg` | Evalúa tu sonrisa | SVG cuadrado, `viewBox` 1:1 |
+| Opciones | `assets/images/process/options.svg` | Conoce tus opciones | SVG cuadrado, `viewBox` 1:1 |
+| Agenda | `assets/images/process/agenda.svg` | Agenda fácilmente | SVG cuadrado, `viewBox` 1:1 |
+
+Los servicios continúan usando los mismos archivos de `assets/images/services/`, pero en V4 aparecen dos veces visualmente: como icono principal de la tarjeta y como marca de agua de fondo. Por ello, reemplazar uno de esos SVG actualiza ambos usos automáticamente.
